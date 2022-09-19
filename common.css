@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
   }
   
   body {
@@ -11,6 +12,7 @@
     background-color: #fafafa;
     color: #212121;
     line-height: 1.5;
+    overflow-x: hidden;
   }
   
   input {
@@ -22,4 +24,19 @@
     padding: 8px 12px;
     cursor: pointer;
   }
+
+  img{
+      border: 2px solid #a17e7e; 
+        padding: 15px;  
+        margin-right: 10px; 
+        margin-bottom: 10px;
+        margin-top: 60px; 
+        width: 330px;
+        height: 200px;
+        background:linear-gradient(60deg, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+        overflow: hidden;
+        border-radius: 15px;
+       
+       
+    }
   
