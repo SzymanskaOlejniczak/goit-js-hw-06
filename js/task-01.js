@@ -1,18 +1,28 @@
-const numberOfCategories = document.querySelectorAll("li.item");
-console.log(`Number of Categories:${numberOfCategories.length}`);
-const category = numberOfCategories[0].querySelector("h2").textContent;
-console.log(`Category: ${category}`); 
+const numberOfCategories = document.querySelectorAll(".item");
 
-const listAnimals =  numberOfCategories[0].lastElementChild.querySelectorAll("li");
-console.log(`Elements: ${listAnimals.length}`);
-const category2 = numberOfCategories[1].querySelector("h2").textContent;
-console.log(`Category: ${category2}`); 
+console.log(`Number of categories: ${numberOfCategories.length}`);
 
-const listProducts =  numberOfCategories[1].lastElementChild.querySelectorAll("li");
-console.log(`Elements: ${listProducts.length}`);
+numberOfCategories.forEach((item) => {
+console.log(`Category: ${item.firstElementChild.textContent}`);
+console.log(`Elements: ${item.lastElementChild.children.length}`);
+});
 
-const category3 = numberOfCategories[2].querySelector("h2").textContent;
-console.log(`Category: ${category3}`); 
+//const numberOfCategories = document.querySelectorAll(".item");
+//console.log(`Number of Categories:${numberOfCategories.length}`);
+//const category = numberOfCategories[0].querySelector("h2").textContent;
+//console.log(`Category: ${category}`); 
 
-const listTechnologies =  numberOfCategories[2].lastElementChild.querySelectorAll("li");
-console.log(`Elements: ${listTechnologies.length}`);
+//const listAnimals =  numberOfCategories[0].lastElementChild.querySelectorAll("li");
+//console.log(`Elements: ${listAnimals.length}`);
+//const category2 = numberOfCategories[1].querySelector("h2").textContent;
+//console.log(`Category: ${category2}`); 
+
+//const listProducts =  numberOfCategories[1].lastElementChild.querySelectorAll("li");
+//console.log(`Elements: ${listProducts.length}`);
+
+//const category3 = numberOfCategories[2].querySelector("h2").textContent;
+//console.log(`Category: ${category3}`); 
+
+//const listTechnologies =  numberOfCategories[2].lastElementChild.querySelectorAll("li");
+//console.log(`Elements: ${listTechnologies.length}`);
+
