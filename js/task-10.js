@@ -17,9 +17,10 @@ const createBoxes = (amount) => {
 
   boxesAdd.append(...boxesDiv);
 }
+const destroyBoxes = () => boxesAdd.innerHTML = '';
 createBtn.addEventListener('click', () => createBoxes(inputAdd.value));
 
-destroyBtn.addEventListener('click', () => boxesAdd.innerHTML = '');
+destroyBtn.addEventListener('click', destroyBoxes);
 
 
 function getRandomHexColor() {
